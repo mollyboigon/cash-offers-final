@@ -149,19 +149,33 @@ figcaption {
 * We also apply margins to them to air them out
 */
 
-.sleep,
-.work,
-.tv,
-.eating {
+.nc,
+.sc,
+.tenn,
+.ga,
+.tx,
+.fl,
+.al,
+.in,
+.mi,
+.va,
+.ok {
     margin: 5px 0;
     display: none;
     /*instead of writing it out three times you can apply styles to three divs*/
 }
 
-.sleep.active,
-.work.active,
-.tv.active, /*if it has both peapod and active OR freshdirect and active etc*/
-.eating.active
+.nc.active,
+.sc.active,
+.tenn.active,
+.ga.active,
+.tx.active,
+.fl.active,
+.al.active,
+.in.active,
+.mi.active,
+.va.active,
+.ok.active,
 {
     display: block;
 }
@@ -232,17 +246,17 @@ figcaption {
 
 }
 
-#worker:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
+#t2005:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
     top: 20%;
     left: 25%
 }
 
-#building:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
+#t2009:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
     top: 10%;
     left: 81%
 }
 
-#conditions:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
+#t2022:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
     top: 20%;
     left: 45%
 }
