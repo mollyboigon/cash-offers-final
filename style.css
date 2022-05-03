@@ -20,7 +20,251 @@ You will find this is far easier than the opposite task of using CSS to cram you
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
+
+/** RESPONSIVE IMAGES */
+
+figure,
+img {
+    /* Sets image width to match parent */
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.2em;
+}
+
+header {
+    margin-bottom: 16px;
+}
+
+header p {
+    margin: 0;
+}
+
+/** Caption styles */
+
+.caption,
+figcaption {
+    font-size: 0.9rem;
+    color: #8e8a8a;
+    padding: 5px 0;
+}
+
+
+/** BASE CLASSES */
+
+
+/** Container styles to keep content from becoming too wide or coming too close to
+* mobile edge */
+}
+
+.collage {
+        display: flex;
+        flex-wrap: wrap; /*tells flexbox to take instructions and go to a new line*/
+        justify-content: space-between;
+    }
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+/** Images are allowed to be a little wider when broken out into their own container */
+
+.container.image {
+    max-width: 1200px;
+    padding: 0;
+}
+
+.container.image .caption,
+.container.image figcaption {
+    padding: 5px 10px;
+}
+
+
+/**
+* Calculator styles
+*/
+
+.calc-container {
+    background-color: #e8c0ec;
+    /* Calc background is slightly gray and the full width of the page */
+    padding: 22px 22px 100px 22px;
+    /* 22px of vertical padding only */
+}
+
+.calculator .row .item img {
+    margin: 5px auto;
+    max-width: 300px;
+    
+    /* Air out above and below the image for each item */
+}
+
+.qty_container {
+    display: flex;
+    /* Make the qty_container a flex box so we can juxtapose the qty and unit */
+}
+
+.qty_container>div {
+    flex-basis: 90%;
+    /* Allow the input field in the qty container to take up 90% of the width */
+}
+
+
+/**
+* Styling the input fields to be the full width of the parent, with 7px of padding and turns off the default border 
+*/
+
+.qty_container input {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 7px;
+    border: 0;
+}
+
+
+/**
+* The unit space has a gray background and takes up the remaining 10% of space as an indicator
+* to  the user how qty works
+*/
+
+.qty_container .unit {
+    flex-basis: 20%;
+    background-color: #CCC;
+    padding: 6px 0;
+    text-align: center;
+}
+
+
+/**
+* The individual stores within each item are hidden by default.
+* We also apply margins to them to air them out
+*/
+
+.sleep,
+.work,
+.tv,
+.eating {
+    margin: 5px 0;
+    display: none;
+    /*instead of writing it out three times you can apply styles to three divs*/
+}
+
+.sleep.active,
+.work.active,
+.tv.active, /*if it has both peapod and active OR freshdirect and active etc*/
+.eating.active
+{
+    display: block;
+}
+
+/**
+* Remove  the  default margin on the H3
+*/
+
+.calculator h3 {
+    margin: 0;
+}
+
+
+/**
+* Create negative space beneath each row
+*/
+
+.calculator .row {
+    margin-bottom: 15px;
+    flex-basis: 100%;
+    
+}
+
+/*annotated image styles
+
+/**
+* Hide the totals by default until there's been input
+* Give the totals row a slightly different background and 100% flex-basis 
+*/
+
+/*with chevron it only applies to children.*/
+.collage > .img {
+    flex-basis: calc(50% - 2.5px);
+}
+/*give me first two images and i'm going to do something with them. this is a selector*/
+.collage > .img:nth-child(1), /*comma is or operator*/
+.collage > .img:nth-child(2) {
+    margin-bottom: 5px;
+}
+.dot{
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+
+}
+.dot .inner, /*inner is nested inside of dot*/
+.dot .close {
+    display: none;
+}
+
+.pink {
+    background-color: rgba(240, 161, 175, 0.65);
+
+}
+.blue {
+    background-color: rgba(161, 190, 240, .65);
+
+}
+
+.green {
+    background-color: rgba(162, 240, 161, 0.65);
+
+}
+.annotate {
+    position:relative;
+
+}
+
+#worker:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
+    top: 20%;
+    left: 25%
+}
+
+#building:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
+    top: 10%;
+    left: 81%
+}
+
+#conditions:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
+    top: 20%;
+    left: 45%
+}
+.dot.active{/*two classes*/
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 22px;
+}
+
+.dot.active .inner, /*inner is nested inside of dot*/
+.dot.active .close {
+    display: block;
+}
+/** Images are allowed to be a little wider when broken out into their own container */
+
+
+
 
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
