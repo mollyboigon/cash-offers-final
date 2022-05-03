@@ -46,33 +46,80 @@ inputs.forEach(function (input) { /* input is gonna be the fruit*/
         const qty = parseFloat(e.target.value);
         const this_row = this_input.closest(".row") //closest looks at element first then element's parent if it doesn't match the selector, then grandparent, so forth, till it gets a match
         //will keep working up until it finds div class row
-        const sleep = this_row.querySelector(".sleep"); //will find all descendants of this row with the class amazon on them;
-            const sleep_span = sleep.querySelector("span"); // amazon span = go inside of it and find that span that's inside of it
-            const sleep_rate = parseFloat(sleep.dataset.rate);  //amazon.dataset.price captures dataset as a string, parselfoat turns it into float 
-                const sleep_years = qty * sleep_rate;
-                sleep_span.innerHTML = round_number(sleep_years); 
-                sleep.classList.add("active");//telling javascript to update node so that content is whatever you put on the other side of the equals sign
-
-        const work = this_row.querySelector(".work");
-            const work_span = work.querySelector("span");
-            const work_rate = parseFloat(work.dataset.rate);
-            const work_years = qty * work_rate;
-                work_span.innerHTML = round_number(work_years);
-                work.classList.add("active");
-
-        const tv = this_row.querySelector(".tv");
-            const tv_span = tv.querySelector("span");
-            const tv_rate = parseFloat(tv.dataset.rate);
-            const tv_years = qty * tv_rate;
-                tv_span.innerHTML = round_number(tv_years);
-                tv.classList.add("active");
-
-        const eating = this_row.querySelector(".eating");
-            const eating_span = eating.querySelector("span");
-            const eating_rate = parseFloat(eating.dataset.rate);
-            const eating_years = qty * eating_rate;
-                    eating_span.innerHTML = round_number(eating_years);
-                    eating.classList.add("active");
+        const nc = this_row.querySelector(".nc"); //will find all descendants of this row with the class amazon on them;
+            const nc_span = nc.querySelector("span"); // amazon span = go inside of it and find that span that's inside of it
+            const nc_rate = parseFloat(nc.dataset.rate);  //amazon.dataset.price captures dataset as a string, parselfoat turns it into float 
+                const nc_price = (qty * nc_rate) + qty;
+                nc_span.innerHTML = round_number(nc_price); 
+                nc.classList.add("active");//telling javascript to update node so that content is whatever you put on the other side of the equals sign
         
+        const sc = this_row.querySelector(".sc"); //will find all descendants of this row with the class amazon on them;
+                    const sc_span = sc.querySelector("span"); // amazon span = go inside of it and find that span that's inside of it
+                    const sc_rate = parseFloat(sc.dataset.rate);  //amazon.dataset.price captures dataset as a string, parselfoat turns it into float 
+                        const sc_price = (qty * sc_rate) + qty;
+                        sc_span.innerHTML = round_number(sc_price); 
+                        sc.classList.add("active");//telling javascript to update node so that content is whatever you put on the other side of the equals sign
+     
+        const tenn = this_row.querySelector(".tenn"); //will find all descendants of this row with the class amazon on them;
+                        const tenn_span = tenn.querySelector("span"); // amazon span = go inside of it and find that span that's inside of it
+                        const tenn_rate = parseFloat(tenn.dataset.rate);  //amazon.dataset.price captures dataset as a string, parselfoat turns it into float 
+                            const tenn_price = (qty * tenn_rate) + qty;
+                            tenn_span.innerHTML = round_number(tenn_price); 
+                            tenn.classList.add("active");
+
+        const ga = this_row.querySelector(".ga");
+            const ga_span = ga.querySelector("span");
+            const ga_rate = parseFloat(ga.dataset.rate);
+            const ga_years = (qty * ga_rate) + qty;
+                ga_span.innerHTML = round_number(ga_years);
+                ga.classList.add("active");
+
+        const tx = this_row.querySelector(".tx");
+                const tx_span = tx.querySelector("span");
+                const tx_rate = parseFloat(tx.dataset.rate);
+                const tx_years = (qty * tx_rate) + qty;
+                    tx_span.innerHTML = round_number(tx_years);
+                    tx.classList.add("active");
+        
+        const fl = this_row.querySelector(".fl");
+                const fl_span = fl.querySelector("span");
+                const fl_rate = parseFloat(fl.dataset.rate);
+                const fl_years = (qty * fl_rate) + qty;
+                    fl_span.innerHTML = round_number(fl_years);
+                    fl.classList.add("active");
+
+        const al = this_row.querySelector(".al");
+                    const al_span = al.querySelector("span");
+                    const al_rate = parseFloat(al.dataset.rate);
+                    const al_years = (qty * al_rate) + qty;
+                        al_span.innerHTML = round_number(al_years);
+                        al.classList.add("active");
+
+        const in = this_row.querySelector(".in");
+                        const in_span = in.querySelector("span");
+                        const in_rate = parseFloat(in.dataset.rate);
+                        const in_years = (qty * in_rate) + qty;
+                            in_span.innerHTML = round_number(in_years);
+                            in.classList.add("active");
+
+        const mi = this_row.querySelector(".mi");
+                            const mi_span = mi.querySelector("span");
+                            const mi_rate = parseFloat(mi.dataset.rate);
+                            const mi_years = (qty * mi_rate) + qty;
+                                mi_span.innerHTML = round_number(mi_years);
+                                mi.classList.add("active");
+
+        const va = this_row.querySelector(".va");
+                                const va_span = va.querySelector("span");
+                                const va_rate = parseFloat(va.dataset.rate);
+                                const va_years = (qty * va_rate) + qty;
+                                    va_span.innerHTML = round_number(va_years);
+                                    va.classList.add("active");
+        const ok = this_row.querySelector(".ok");
+                                    const ok_span = ok.querySelector("span");
+                                    const ok_rate = parseFloat(ok.dataset.rate);
+                                    const ok_years = (qty * ok_rate) + qty;
+                                        ok_span.innerHTML = round_number(ok_years);
+                                        ok.classList.add("active");
         });
     });
