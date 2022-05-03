@@ -149,33 +149,13 @@ figcaption {
 * We also apply margins to them to air them out
 */
 
-.nc,
-.sc,
-.tenn,
-.ga,
-.tx,
-.fl,
-.al,
-.in,
-.mi,
-.va,
-.ok {
+.state {
     margin: 5px 0;
     display: none;
     /*instead of writing it out three times you can apply styles to three divs*/
 }
 
-.nc.active,
-.sc.active,
-.tenn.active,
-.ga.active,
-.tx.active,
-.fl.active,
-.al.active,
-.in.active,
-.mi.active,
-.va.active,
-.ok.active,
+.state.active
 {
     display: block;
 }

@@ -44,8 +44,9 @@ inputs.forEach(function (input) { /* input is gonna be the fruit*/
 //we need to know which fruit or piece of fruit had its value change we need event to tell us where we are
         const this_input = e.target;
         const qty = parseFloat(e.target.value);
-        const this_row = this_input.closest(".row") //closest looks at element first then element's parent if it doesn't match the selector, then grandparent, so forth, till it gets a match
+        const this_row = this_input.closest(".calculator") //closest looks at element first then element's parent if it doesn't match the selector, then grandparent, so forth, till it gets a match
         //will keep working up until it finds div class row
+        
         const nc = this_row.querySelector(".nc"); //will find all descendants of this row with the class amazon on them;
             const nc_span = nc.querySelector("span"); // amazon span = go inside of it and find that span that's inside of it
             const nc_rate = parseFloat(nc.dataset.rate);  //amazon.dataset.price captures dataset as a string, parselfoat turns it into float 
@@ -95,12 +96,12 @@ inputs.forEach(function (input) { /* input is gonna be the fruit*/
                         al_span.innerHTML = round_number(al_years);
                         al.classList.add("active");
 
-        const in = this_row.querySelector(".in");
-                        const in_span = in.querySelector("span");
-                        const in_rate = parseFloat(in.dataset.rate);
-                        const in_years = (qty * in_rate) + qty;
-                            in_span.innerHTML = round_number(in_years);
-                            in.classList.add("active");
+        const ind = this_row.querySelector(".ind");
+                        const ind_span = ind.querySelector("span");
+                        const ind_rate = parseFloat(ind.dataset.rate);
+                        const ind_years = (qty * ind_rate) + qty;
+                            ind_span.innerHTML = round_number(ind_years);
+                            ind.classList.add("active");
 
         const mi = this_row.querySelector(".mi");
                             const mi_span = mi.querySelector("span");
