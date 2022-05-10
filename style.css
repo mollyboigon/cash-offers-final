@@ -29,7 +29,6 @@ figure,
 img {
     /* Sets image width to match parent */
     width: 100%;
-    max-width: 600px;
     display: block;
     margin: 0 auto;
 }
@@ -53,6 +52,8 @@ figcaption {
     font-size: 0.9rem;
     color: #8e8a8a;
     padding: 5px 0;
+    margin-bottom: 20px;
+
 }
 
 
@@ -94,9 +95,7 @@ figcaption {
 */
 
 .calc-container {
-    background-color: #e8c0ec;
-    /* Calc background is slightly gray and the full width of the page */
-    padding: 22px 22px 100px 22px;
+    padding: 22px 22px 22px 22px;
     /* 22px of vertical padding only */
 }
 
@@ -174,7 +173,7 @@ figcaption {
 */
 
 .calculator .row {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     flex-basis: 100%;
     
 }
@@ -198,7 +197,7 @@ figcaption {
 .dot{
     width: 25px;
     height: 25px;
-    border: 2px solid #fff;
+    border: 2px solid rgb(14, 20, 134);
     border-radius: 50%;
     position: absolute;
 
@@ -228,17 +227,17 @@ figcaption {
 
 #t2005:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
     top: 20%;
-    left: 25%
+    left: 52%
 }
 
 #t2009:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
-    top: 10%;
-    left: 81%
+    top: 72%;
+    left: 62%
 }
 
 #t2022:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
-    top: 20%;
-    left: 45%
+    top: 15%;
+    left: 95%
 }
 .dot.active{/*two classes*/
     width: 100%;

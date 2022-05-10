@@ -31,7 +31,7 @@ function round_number(num) {
     num = num / 100;
 
     // handle trailing zeroes
-    num = num.toFixed(2);
+    num = num.toLocaleString();
 
     return num;
 }
