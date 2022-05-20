@@ -208,7 +208,7 @@ figcaption {
 }
 
 .pink {
-    background-color: rgba(240, 161, 175, 0.65);
+    background-color: rgba(161, 190, 240, .65);
 
 }
 .blue {
@@ -217,7 +217,7 @@ figcaption {
 }
 
 .green {
-    background-color: rgba(162, 240, 161, 0.65);
+    background-color: rgba(161, 190, 240, .65);
 
 }
 .annotate {
@@ -225,19 +225,19 @@ figcaption {
 
 }
 
-#t2005:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
-    top: 20%;
-    left: 52%
+#tbuyer:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
+    top: 17%;
+    left: 18%
 }
 
-#t2009:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
-    top: 72%;
-    left: 62%
+#tlender:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
+    top: 54%;
+    left: 43%
 }
 
-#t2022:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
-    top: 15%;
-    left: 97%
+#tservice:not(.active) /*camera is an id, top and left are applying after. colon not active changes it so that it finds elemnt on the pag with class camera and doesn't have class camera and appliels these. if it has both it doesn't apply*/ {
+    top: 17%;
+    left: 66%
 }
 .dot.active{/*two classes*/
     width: 100%;
